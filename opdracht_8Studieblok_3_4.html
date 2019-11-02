@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<form method='post'>
+  <h1>naam invoeren:</h1>
+  <input type="text" name="text" id="inputText" value=""/>
+</form>
+  <div id="hok1" >
+  </div>
+  <button onclick="inputText();">Klik hier</button>
+
+<script type="text/javascript">
+function inputText() {
+
+  document.getElementById('hok1').innerHTML = document.getElementById('inputText').value+"."+"<br>"+ document.getElementById('hok1').innerHTML;
+
+ }
+    </script>
+  </body>
+</html>

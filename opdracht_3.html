@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+
+    <p id="demo" onclick="myFunction()" dblclick="myFunction()" >Hallo wereld!</p>
+
+    <!-- <div onmouseover="mOver(this)" onmouseout="mOut(this)"style="width:120px;height:20px;padding:20px;">Hello world!</div> -->
+<script>
+  // function mOver(obj) {
+  //   obj.innerHTML = "Thank You "
+  // }
+  //
+  // function mOut(obj) {
+  //   obj.innerHTML = "Hello world!"
+  // }
+  document.getElementById("demo").addEventListener("dblclick", myFunction);
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello world";
+  }
+  document.getElementById("demo").onclick = function() {myFunction()};
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "Hallo wereld ";
+  }
+
+</script>
+
+
+
+
+  </body>
+</html>
